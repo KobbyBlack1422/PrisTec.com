@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0212a026a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 class="logo"><span class="p">P</span>ROSPER.</h3>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT/Accounting </p>
+                <h1>Hi, I'm <span>Prosper</span> <br> Bempoh From Ghana</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--========== About Section ==========-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Pics/1.jpg" alt="about me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Currently a university student from the University of Cape Coast pursuing my Bachelor education in Information Technology (IT) 
+                        and Accounting, seeking entry-level positions, internships or student work in the field of Data analytics, Accounting, or 
+                        any field in IT or Accounting. Strong analytical and well-programming skills gained through coursework and seminars,
+                         with experience in some but not all of analytics tool. I’m a dedicated person that like to take work and learning seriously 
+                         which has helped me on my own take courses outside the school curriculum for now such as (Data analytics, Data science, cybersecurity, 
+                         Networking…. And more to come). Also at the edge of taking my ability in accounting to the next level to practice, intern, and 
+                         acquire certifications in ACCA.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                         </div>
+
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Personal</span><br>Good Communication Skills<br>Good Human Relations<br>Team Player<br>Critical thinking etc...</li>
+                                <li><span>Technical</span><br>Programming<br>Database management (MySQL)<br>Networking etc...</li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>04/2020 - 06/2020</span><br>IT Support and Troubleshooting</li>
+                                <li><span>05/2022 - 09/2022</span><br>Database Management (SQL/MySQL/Oracle)</li>
+                                
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span> Start (2022) – Current (2024) - End (2026)</span><br>Bachelor in Information Technology & Accounting | University of Cape Coast </li>
+                                <li><span> 2018 - 2020</span><br>West African Senior School Certificate Examination (WASSCE) | Sekondi college - Takoradi</li>
+                                <li><span>2020 – 2021</span><br>Diploma in Software Engineering | Intercom Programming & Manufacturing Company (IPMC) </li>
+                                <li><span>2015 – 2017</span><br>Basic Education Certificate Examination (BECE) | Peace Royal International School </li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=============== Services ==================-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web development is the process of building and maintaing websites or web applications, ensuring they are 
+                        functional, user-friendly,  and visually applealing. It encompasses everything fromm coding to designing, creating a bridge between
+                        technology and users' needs. <span class="hidden-text">Web development is a dynamic and ever-evolving field that merges creativity with technical skills.
+                        whether you are focusing on user experience in fornt-end development or managing server-side operations in back-end development, 
+                        the goal is to build a functional and engaging website. Full-stack development allows developers to work across both areas, creating seamless
+                        web applications from scratch.</span>
+                    </p>
+                    <a href="#" class="learn-more-btn" onclick="toggleText(this)">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>cybersecurity</h2>
+                    <p>Imagine this: every day, a team of digital defenders stands guard, fending off invisible threats in a high-stakes game of cat and mouse.
+                         In the heart of the cyber realm, hackers and security experts engage in a relentless battle, where every keystroke could be a potential 
+                         breach or a critical defense. Behind the scenes, advanced algorithms and cutting-edge technology are constantly evolving to outsmart
+                          cybercriminals and protect our most sensitive information. In this thrilling arena, innovation is key, and the stakes are nothing
+                           less than our digital safety and privacy. Welcome to the electrifying world of cybersecurity, where the action never stops and the
+                            mission is clear: secure the future!</p>
+                         <a href="#" class="learn-more-btn" onclick="toggleText(this)">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Data analytics</h2>
+                    <p>Picture this: in the bustling world of banking and accounting, a new breed of financial sleuths wields the power of data analytics
+                         to uncover hidden opportunities and risks. Armed with sophisticated algorithms and real-time insights, these analysts dive deep 
+                         into mountains of data, transforming raw numbers into actionable intelligence. They predict market trends, detect fraudulent activities,
+                          and optimize investment strategies with pinpoint accuracy. It’s a high-octane environment where every data point tells a story 
+                          and every analysis can make or break financial decisions. Welcome to the thrilling realm of data analytics in banking and accounting, 
+                          where data isn’t just numbers—it’s the key to unlocking tomorrow’s financial success!</p>
+                         <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============ Portfolio ============-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Pics/8.jpg" alt="portfolio">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connect you to the talented people around the world. Download it from play 
+                            store or your apple store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/Pics/8.jpg" alt="portfolio">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connect you to the talented people around the world. Download it from play 
+                            store or your apple store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/Pics/design-stunning-app-screenshots-for-app-store-and-play-store-screenshot.png" height="320px" alt="portfolio">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connect you to the talented people around the world. Download it from play 
+                            store or your apple store.</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--================ Contact ============-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Bempohprosper21@gamil.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>(+233) 540 380 460</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="/Pics/MyCV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024, Made with <i class="fas fa-heart"></i> by ProTech</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx7o1gpEm3hYIQmbtwaV1UfeJWae6r69C-ZCIUmS4Pipq8MUmnRwWooxvKHqeB7fhsYTA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },1200)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script>
+    function closeSidebar(){
+        document.getElementById("sidebar").style.display = "none";
+    }
+
+    function toggleSidebar(){
+        let sidebar = document.getElementById("sidebar");
+        if (sidebar.style.display === "none" || !sidebar.style.display){
+            sidebar.style.display = "block";
+        }else{
+            sidebar.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
